@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700|Open+Sans:400,600,700");
+
+:root {
+  --color-primary: #037de8;
+  --color-link-active: #2caef0;
+  --color-primary-text: #333;
+  --color-secondary-text: #848484;
+}
+
+body {
+  font-size: 0.75rem;
+}
+.navbar .container {
+  align-items: center;
+}
+
+nav {
+  margin-top: 2rem;
+}
+
+.nav__logo {
+  margin-bottom: 1rem;
+}
+
+button.navbar-toggler {
+  margin-bottom: 1rem;
+  border: none;
+  background-color: #ddd;
+}
+#nav__items {
+  justify-content: flex-end;
+}
+
+.nav__item {
+  margin-bottom: 1rem;
+}
+.nav__item a {
+  text-decoration: none;
+  color: var(--color-secondary-text);
+  padding: 0 1rem;
+  font-weight: 600;
+}
+
+a.active__nav {
+  color: var(--color-link-active);
+}
+
+/* footer */
+
+footer {
+  background-color: var(--color-primary);
+  padding-top: 2rem;
+  color: #fff;
+  padding-bottom: 1rem;
+}
+
+.footer__content {
+  font-size: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__content {
+    flex-direction: row;
+  }
+}
+
+.footer__block {
+  margin-top: 2rem;
+}
+
+.footer__block__title {
+  font-weight: 600;
+}
+
+.division__name {
+  font-weight: 600;
+}
+
+.footer__officeloc {
+  margin-top: 0.75rem;
+}
+
+.footer__contact {
+  margin-top: 0.75rem;
+}
+
+.footer__link {
+  margin-bottom: 0.2rem;
+}
+
+.footer__link__text {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer__copyright {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.socmed__logo {
+  width: 0.75rem;
+  height: auto;
+  margin: 0 0.5rem;
+}
+
+@media screen and (min-width: 560px) {
+  .footer__copyright {
+    flex-direction: row;
+  }
+}
