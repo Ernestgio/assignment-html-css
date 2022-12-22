@@ -115,6 +115,10 @@ label {
   color: var(--color-secondary-text);
 }
 
+.mailLink {
+  text-decoration: none;
+}
+
 .first__p__contact {
   margin-top: 1rem;
 }

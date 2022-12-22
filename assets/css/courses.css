@@ -61,6 +61,10 @@ a.active__nav {
 }
 
 /* Section */
+section {
+  margin-top: 3rem;
+}
+
 .section__title {
   font-weight: 700;
   font-size: 1.5rem;
@@ -69,6 +73,41 @@ a.active__nav {
 
 .section__desc {
   color: var(--color-secondary-text);
+}
+
+.courses__container {
+  margin-top: 1rem;
+}
+
+.course__card {
+  padding: 1rem;
+  text-align: left;
+  background-color: #efefef;
+}
+
+.course__card__title {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.course__card__desc {
+  margin-top: 1rem;
+  color: var(--color-secondary-text);
+}
+
+.separator__p {
+  margin-top: 1.5rem;
+}
+
+.offering__card img {
+  width: 100%;
+  height: 100%;
+}
+
+.offering__title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 0.75rem;
 }
 
 /* scroll up button */

@@ -50,7 +50,7 @@ a.active__nav {
 
 .carousel__caption__container {
   position: absolute;
-  bottom: 4rem;
+  bottom: 3rem;
   left: 0;
   right: 0;
   background-color: rgba(255, 255, 255, 0.2);
@@ -71,6 +71,8 @@ a.active__nav {
   background-color: rgba(255, 255, 255, 0.5);
   text-align: center;
   padding: 1.25rem;
+  width: 30%;
+  margin: 0 auto;
 }
 
 .carousel__caption__jumbotron p {
@@ -228,7 +230,7 @@ section.quote {
 /* footer */
 
 footer {
-  margin-top: 4rem;
+  margin-top: 2rem;
   background-color: var(--color-primary);
   padding-top: 2rem;
   color: #fff;
