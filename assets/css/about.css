@@ -9,7 +9,10 @@
 
 body {
   font-size: 0.75rem;
+  color: var(--color-primary-text);
 }
+
+/* Navbar */
 .navbar .container {
   align-items: center;
 }
@@ -45,60 +48,22 @@ a.active__nav {
   color: var(--color-link-active);
 }
 
-/* Body */
-/* Carousel */
-
-.carousel__caption__container {
-  position: absolute;
-  bottom: 4rem;
-  left: 0;
-  right: 0;
-  background-color: rgba(255, 255, 255, 0.2);
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 100%;
-  display: none;
+/* Banner */
+.banner {
+  background-color: var(--color-primary);
+  padding: 1rem 0;
 }
 
-@media screen and (min-width: 768px) {
-  .carousel__caption__container {
-    display: block;
-  }
-}
-
-.carousel__caption__jumbotron {
-  background-color: rgba(255, 255, 255, 0.5);
-  text-align: center;
-  padding: 1.25rem;
-}
-
-.carousel__caption__jumbotron p {
+.banner__text {
+  color: #fff;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 2rem;
 }
 
-.carousel__caption__button {
-  text-decoration: none;
-  background-color: #328cca;
-  color: white;
-  font-size: 0.875rem;
-  padding: 0.5rem 1rem;
-}
-
-.carousel__arrow__button {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-/* featured section */
-section {
-  margin-top: 3rem;
-  text-align: center;
-}
-
+/* Section */
 .section__title {
-  font-size: 1.5rem;
   font-weight: 700;
+  font-size: 1.5rem;
   color: var(--color-primary-text);
 }
 
@@ -106,107 +71,74 @@ section {
   color: var(--color-secondary-text);
 }
 
-.featured__cards__container {
-  display: flex;
-  flex: column;
-  justify-content: center;
-  flex-wrap: wrap;
+/* landing */
+.landing {
+  margin-top: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #ccc;
 }
 
-@media screen and (min-width: 768px) {
-  .featured__cards__container {
-    flex: row;
-    justify-content: space-between;
-  }
-}
-
-.featured__card {
-  max-width: 16rem;
-}
-.featured__card__display {
-  padding: 1.5rem 0;
-}
-
-.featured__card__display svg {
+.landing__button {
+  text-decoration: none;
+  background-color: #328cca;
   color: white;
-  height: 3rem;
-  width: 3rem;
-}
-
-.trophy__card {
-  background-color: #ed5440;
-}
-
-.image__card {
-  background-color: #d866b2;
-}
-
-.monitor__card {
-  background-color: #4ac467;
-}
-
-.globe__card {
-  background-color: #2aaef0;
-}
-
-.featured__card__caption {
-  background-color: #f9f9f9;
-  padding: 1rem;
-  text-align: left;
-}
-
-.featured__card__title {
-  font-weight: 700;
-  font-size: 1.25rem;
-}
-
-.featured__card__desc {
-  margin-top: 1rem;
-  color: var(--color-secondary-text);
-}
-
-/* Quote */
-section.quote {
-  background-color: #efefef;
-}
-
-.carousel-inner {
-  padding-top: 3rem;
-  padding-bottom: 5rem;
-}
-.quote__container {
-  text-align: center;
-  margin: 0 1rem;
-}
-
-.quote__container p {
-  font-style: italic;
   font-size: 0.875rem;
+  padding: 0.5rem 1rem;
 }
 
-.quote__sayer {
-  font-style: italic;
-  font-weight: 600;
+.landing__row {
+  margin-top: 2.5rem;
 }
 
-/* Courses  */
-.courses__container {
-  margin-top: 1rem;
+.img__section__container img {
+  width: 100%;
 }
 
-.course__card {
-  padding: 1rem;
-  text-align: left;
+.img__desc span {
+  color: #656565;
+  font-size: 0.75rem;
+  padding-bottom: 0.125rem;
 }
 
-.course__card__title {
-  font-weight: 600;
+.desc__points {
+  display: flex;
+  align-items: center;
+}
+
+/* Promotion */
+.promotion {
+  margin-top: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Team */
+.team {
+  margin-top: 2rem;
+}
+
+.team__card__container {
+  background-color: #f9f9f9;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.team__card__title {
+  text-align: center;
   font-size: 1rem;
+  font-weight: 600;
+  margin-top: 1rem;
 }
 
-.course__card__desc {
-  margin-top: 1rem;
+.team__card__desc {
+  text-align: center;
+  font-size: 1rem;
   color: var(--color-secondary-text);
+  margin: 1rem auto;
+}
+
+.team__card__container img {
+  width: 100%;
 }
 
 /* scroll up button */
@@ -225,8 +157,8 @@ section.quote {
   width: 1rem;
   height: 1rem;
 }
-/* footer */
 
+/* footer */
 footer {
   margin-top: 4rem;
   background-color: var(--color-primary);
