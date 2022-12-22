@@ -30,6 +30,7 @@ button.navbar-toggler {
   border: none;
   background-color: #ddd;
 }
+
 #nav__items {
   justify-content: flex-end;
 }
@@ -71,127 +72,52 @@ a.active__nav {
   color: var(--color-secondary-text);
 }
 
-/* landing */
-.landing {
+.map {
   margin-top: 3rem;
-  padding-bottom: 3rem;
-  border-bottom: 1px solid #ccc;
 }
 
-.landing__button {
-  text-decoration: none;
-  background-color: #328cca;
-  color: white;
-  font-size: 0.875rem;
-  padding: 0.5rem 1rem;
+.map__wrapper {
+  height: 30rem;
 }
 
-.landing__row {
-  margin-top: 2.5rem;
-}
-
-.img__section__container img {
+.map__wrapper iframe {
   width: 100%;
+  height: 100%;
 }
 
-.img__desc span {
-  color: #656565;
-  font-size: 0.75rem;
-  padding-bottom: 0.125rem;
-}
-
-.desc__points {
-  display: flex;
-  align-items: center;
-}
-
-/* Promotion */
-.promotion {
-  margin-top: 3rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid #ccc;
-}
-
-div.accordion-item {
-  border: none;
-  margin-bottom: 0.5rem;
-  background-color: #b9b9b9;
-}
-
-div.accordion-item .accordion-header {
-  background-color: #b9b9b9;
-}
-
-.accordion-button::after {
-  background-image: none;
-}
-
-.accordion-button:not(.collapsed)::after {
-  background-image: none;
-}
-
-.accordion__heading {
-  background-color: #b9b9b9;
-  padding-left: 1.25rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  margin-top: 0.25rem;
-}
-
-.material-symbols-outlined {
-  font-size: 0.875rem;
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
-}
-
-.accordion__heading__title {
-  display: flex;
-  align-items: center;
-  font-size: 0.875rem;
-  color: white;
-}
-
-.expertise__title {
-  font-weight: 600;
-}
-
-.progress {
-  height: 0.25rem;
-  margin: 0.6rem auto;
-}
-
-.bg__light__green {
-  background-color: #48bd5b;
-}
-
-/* Team */
-.team {
+/* form */
+.contact {
   margin-top: 2rem;
 }
 
-.team__card__container {
-  background-color: #f9f9f9;
-  padding: 0;
-  margin: 0 auto;
+label {
+  font-weight: 600;
+  color: var(--color-primary-text);
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
 }
 
-.team__card__title {
-  text-align: center;
-  font-size: 1rem;
+#submit {
+  border: 1px solid #ccc;
+  background-color: #328cca;
+  color: white;
+  border-radius: 0;
+  font-size: 0.875rem;
+  padding: 0.5rem 1rem;
+  margin-top: 0.75rem;
+}
+
+.contact__strong {
   font-weight: 600;
+}
+
+.text__secondary {
+  color: var(--color-secondary-text);
+}
+
+.first__p__contact {
   margin-top: 1rem;
 }
-
-.team__card__desc {
-  text-align: center;
-  font-size: 1rem;
-  color: var(--color-secondary-text);
-  margin: 1rem auto;
-}
-
-.team__card__container img {
-  width: 100%;
-}
-
 /* scroll up button */
 #scrollup {
   position: fixed;
