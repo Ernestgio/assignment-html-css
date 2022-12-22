@@ -12,6 +12,10 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/assets/css/index.css" />
   </head>
   <body>
@@ -54,6 +58,367 @@
       </nav>
     </header>
 
+    <!-- Body -->
+    <!-- Carousel -->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="false"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active carousel__item">
+          <img
+            src="assets/img/slides/1.jpg"
+            class="d-block w-100"
+            alt="first-slide"
+          />
+          <div class="carousel__caption__container">
+            <div class="carousel__caption__jumbotron">
+              <h1 class="">Collage Education</h1>
+              <p>Awesome Template get it now</p>
+              <a href="#" class="carousel__caption__button">See Pricing</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item carousel__item">
+          <img
+            src="assets/img/slides/2.jpg"
+            class="d-block w-100"
+            alt="second slide label"
+          />
+          <div class="carousel__caption__container">
+            <div class="carousel__caption__jumbotron">
+              <h1 class="">Collage Education</h1>
+              <p>Awesome Template get it now</p>
+              <a href="#" class="carousel__caption__button">See Pricing</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="assets/img/slides/3.jpg"
+            class="d-block w-100"
+            alt="second-slide"
+          />
+          <div class="carousel__caption__container">
+            <div class="carousel__caption__jumbotron">
+              <h1 class="">Collage Education</h1>
+              <p>Awesome Template get it now</p>
+              <a href="#" class="carousel__caption__button">See Pricing</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span
+          class="carousel-control-prev-icon carousel__arrow__button"
+          aria-hidden="true"
+        ></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span
+          class="carousel-control-next-icon carousel__arrow__button"
+          aria-hidden="true"
+        ></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Featured -->
+    <section class="featured container">
+      <h1 class="section__title">Our Featured Course</h1>
+      <p class="section__desc">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur,
+        recusandae ut. Amet explicabo eaque velit vitae labore corporis facilis
+        id reprehenderit quia neque est atque dolor ab natus illo, dolorum
+        veniam praesentium sed repudiandae consequuntur. Doloremque minus dolore
+        tenetur voluptatibus architecto, nobis dicta maxime accusantium
+        molestias debitis minima fugit excepturi assumenda blanditiis incidunt
+        atque eos perspiciatis non ipsa optio neque.
+      </p>
+      <div class="featured__cards__container">
+        <div class="featured__card">
+          <div class="featured__card__display trophy__card">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              class="bi bi-trophy-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M2.5.5A.5.5 0 0 1 3 0h10a.5.5 0 0 1 .5.5c0 .538-.012 1.05-.034 1.536a3 3 0 1 1-1.133 5.89c-.79 1.865-1.878 2.777-2.833 3.011v2.173l1.425.356c.194.048.377.135.537.255L13.3 15.1a.5.5 0 0 1-.3.9H3a.5.5 0 0 1-.3-.9l1.838-1.379c.16-.12.343-.207.537-.255L6.5 13.11v-2.173c-.955-.234-2.043-1.146-2.833-3.012a3 3 0 1 1-1.132-5.89A33.076 33.076 0 0 1 2.5.5zm.099 2.54a2 2 0 0 0 .72 3.935c-.333-1.05-.588-2.346-.72-3.935zm10.083 3.935a2 2 0 0 0 .72-3.935c-.133 1.59-.388 2.885-.72 3.935z"
+              />
+            </svg>
+          </div>
+          <div class="featured__card__caption">
+            <div class="featured__card__title">Web Development</div>
+            <p class="featured__card__desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Dignissimos doloribus explicabo accusantium.
+            </p>
+          </div>
+        </div>
+        <div class="featured__card">
+          <div class="featured__card__display image__card">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              class="bi bi-trophy-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M2.5.5A.5.5 0 0 1 3 0h10a.5.5 0 0 1 .5.5c0 .538-.012 1.05-.034 1.536a3 3 0 1 1-1.133 5.89c-.79 1.865-1.878 2.777-2.833 3.011v2.173l1.425.356c.194.048.377.135.537.255L13.3 15.1a.5.5 0 0 1-.3.9H3a.5.5 0 0 1-.3-.9l1.838-1.379c.16-.12.343-.207.537-.255L6.5 13.11v-2.173c-.955-.234-2.043-1.146-2.833-3.012a3 3 0 1 1-1.132-5.89A33.076 33.076 0 0 1 2.5.5zm.099 2.54a2 2 0 0 0 .72 3.935c-.333-1.05-.588-2.346-.72-3.935zm10.083 3.935a2 2 0 0 0 .72-3.935c-.133 1.59-.388 2.885-.72 3.935z"
+              />
+            </svg>
+          </div>
+          <div class="featured__card__caption">
+            <div class="featured__card__title">Web Development</div>
+            <p class="featured__card__desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Dignissimos doloribus explicabo accusantium.
+            </p>
+          </div>
+        </div>
+        <div class="featured__card">
+          <div class="featured__card__display monitor__card">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              class="bi bi-trophy-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M2.5.5A.5.5 0 0 1 3 0h10a.5.5 0 0 1 .5.5c0 .538-.012 1.05-.034 1.536a3 3 0 1 1-1.133 5.89c-.79 1.865-1.878 2.777-2.833 3.011v2.173l1.425.356c.194.048.377.135.537.255L13.3 15.1a.5.5 0 0 1-.3.9H3a.5.5 0 0 1-.3-.9l1.838-1.379c.16-.12.343-.207.537-.255L6.5 13.11v-2.173c-.955-.234-2.043-1.146-2.833-3.012a3 3 0 1 1-1.132-5.89A33.076 33.076 0 0 1 2.5.5zm.099 2.54a2 2 0 0 0 .72 3.935c-.333-1.05-.588-2.346-.72-3.935zm10.083 3.935a2 2 0 0 0 .72-3.935c-.133 1.59-.388 2.885-.72 3.935z"
+              />
+            </svg>
+          </div>
+          <div class="featured__card__caption">
+            <div class="featured__card__title">Web Development</div>
+            <p class="featured__card__desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Dignissimos doloribus explicabo accusantium.
+            </p>
+          </div>
+        </div>
+        <div class="featured__card">
+          <div class="featured__card__display globe__card">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              class="bi bi-trophy-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M2.5.5A.5.5 0 0 1 3 0h10a.5.5 0 0 1 .5.5c0 .538-.012 1.05-.034 1.536a3 3 0 1 1-1.133 5.89c-.79 1.865-1.878 2.777-2.833 3.011v2.173l1.425.356c.194.048.377.135.537.255L13.3 15.1a.5.5 0 0 1-.3.9H3a.5.5 0 0 1-.3-.9l1.838-1.379c.16-.12.343-.207.537-.255L6.5 13.11v-2.173c-.955-.234-2.043-1.146-2.833-3.012a3 3 0 1 1-1.132-5.89A33.076 33.076 0 0 1 2.5.5zm.099 2.54a2 2 0 0 0 .72 3.935c-.333-1.05-.588-2.346-.72-3.935zm10.083 3.935a2 2 0 0 0 .72-3.935c-.133 1.59-.388 2.885-.72 3.935z"
+              />
+            </svg>
+          </div>
+          <div class="featured__card__caption">
+            <div class="featured__card__title">Web Development</div>
+            <p class="featured__card__desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Dignissimos doloribus explicabo accusantium.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quotes carousel -->
+    <section class="quote">
+      <div id="carouselQuotes" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselQuotes"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselQuotes"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselQuotes"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="quote__container">
+              <p class="d-block w-100" alt="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deleniti et commodi saepe adipisci, magnam temporibus placeat,
+                soluta mollitia odit, ullam accusamus? Vitae ad harum sed vero
+                saepe in est aliquid.
+              </p>
+              <div class="quote__sayer">-Leena Doe-</div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="quote__container">
+              <p class="d-block w-100" alt="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deleniti et commodi saepe adipisci, magnam temporibus placeat,
+                soluta mollitia odit, ullam accusamus? Vitae ad harum sed vero
+                saepe in est aliquid.
+              </p>
+              <div class="quote__sayer">-Leena Doe-</div>
+            </div>
+          </div>
+          <div class="carousel-item active">
+            <div class="quote__container">
+              <p class="d-block w-100" alt="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deleniti et commodi saepe adipisci, magnam temporibus placeat,
+                soluta mollitia odit, ullam accusamus? Vitae ad harum sed vero
+                saepe in est aliquid.
+              </p>
+              <div class="quote__sayer">-Leena Doe-</div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselQuotes"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselQuotes"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Courses offering -->
+    <section class="container">
+      <h1 class="section__title">Courses We Offer</h1>
+      <p class="section__desc">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        exercitationem soluta repellendus a consequuntur enim incidunt, odit
+        voluptatibus officia repudiandae porro facilis impedit corporis
+        necessitatibus ut culpa dicta assumenda molestias voluptas optio
+        explicabo. Quasi et, libero possimus asperiores atque nihil impedit?
+        Numquam fuga id atque voluptates iste nobis ad nesciunt provident eos
+        soluta explicabo necessitatibus labore, laudantium repellat modi et.
+      </p>
+      <div class="courses__container">
+        <div class="row row-cols-1 row-cols-lg-3 g-3">
+          <div class="col">
+            <div class="course__card bg-light">
+              <div class="course__card__title">Heading Course</div>
+              <p class="course__card__desc">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta
+                exercitationem necessitatibus ipsam quam! Voluptas, error!
+              </p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="course__card bg-light">
+              <div class="course__card__title">Heading Course</div>
+              <p class="course__card__desc">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta
+                exercitationem necessitatibus ipsam quam! Voluptas, error!
+              </p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="course__card bg-light">
+              <div class="course__card__title">Heading Course</div>
+              <p class="course__card__desc">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta
+                exercitationem necessitatibus ipsam quam! Voluptas, error!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-lg-3 g-3 mt-1">
+          <div class="col">
+            <div class="course__card bg-light">
+              <div class="course__card__title">Heading Course</div>
+              <p class="course__card__desc">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta
+                exercitationem necessitatibus ipsam quam! Voluptas, error!
+              </p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="course__card bg-light">
+              <div class="course__card__title">Heading Course</div>
+              <p class="course__card__desc">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta
+                exercitationem necessitatibus ipsam quam! Voluptas, error!
+              </p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="course__card bg-light">
+              <div class="course__card__title">Heading Course</div>
+              <p class="course__card__desc">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta
+                exercitationem necessitatibus ipsam quam! Voluptas, error!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scroll to top button -->
+    <button id="scrollup" onclick="scrollUp()">
+      <img src="assets/icon/up.png" />
+    </button>
+
+    <!-- footer -->
     <footer class="footer">
       <div class="footer__content container">
         <div class="footer__block">
@@ -152,6 +517,7 @@
         </div>
       </div>
     </footer>
+    <script src="assets/js/scrollTop.js"></script>
     <!-- JavaScript Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
