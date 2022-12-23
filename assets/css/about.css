@@ -118,36 +118,20 @@ div.accordion-item {
   background-color: #b9b9b9;
 }
 
-div.accordion-item .accordion-header {
+.accordion-item .accordion-button {
   background-color: #b9b9b9;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
 }
 
+/* Hide right icon */
 .accordion-button::after {
   background-image: none;
 }
 
 .accordion-button:not(.collapsed)::after {
   background-image: none;
-}
-
-.accordion__heading {
-  background-color: #b9b9b9;
-  padding-left: 1.25rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  margin-top: 0.25rem;
-}
-
-.material-symbols-outlined {
-  font-size: 0.875rem;
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
-}
-
-.accordion__heading__title {
-  display: flex;
-  align-items: center;
-  font-size: 0.875rem;
-  color: white;
 }
 
 .expertise__title {

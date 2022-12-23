@@ -80,16 +80,66 @@ a.active__nav {
   font-size: 1rem;
 }
 
-.carousel__caption__button {
-  text-decoration: none;
+button.carousel__caption__button {
+  border-radius: 0;
   background-color: #328cca;
   color: white;
   font-size: 0.875rem;
   padding: 0.5rem 1rem;
 }
 
+button.carousel__caption__button:hover {
+  background-color: #328cca;
+  color: white;
+}
+
 .carousel__arrow__button {
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Modal */
+.pricing__container {
+  text-align: center;
+  border: 1px solid #efefef;
+}
+
+.pricing__header {
+  padding: 1rem;
+  background-color: #f9f9f9;
+}
+
+.pricing__title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.pricing__price {
+  margin-top: 1.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.pricing__benefit {
+  margin-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.pricing__footer {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.get__now__button {
+  text-decoration: none;
+  background-color: #328cca;
+  color: white;
+  font-size: 0.875rem;
+  padding: 0.5rem 1rem;
 }
 
 /* featured section */
@@ -99,7 +149,7 @@ section {
 }
 
 .section__title {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 700;
   color: var(--color-primary-text);
 }
@@ -132,6 +182,12 @@ section {
 }
 
 .featured__card__display svg {
+  color: white;
+  height: 3rem;
+  width: 3rem;
+}
+
+.featured__card__display img {
   color: white;
   height: 3rem;
   width: 3rem;
