@@ -98,6 +98,7 @@ label {
 }
 
 #submit {
+  display: inline-block;
   border: 1px solid #ccc;
   background-color: #328cca;
   color: white;

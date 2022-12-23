@@ -1,28 +1,171 @@
-#chevron {
-  position: relative;
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap");
+
+:root {
+  --color-primary-text: #000000;
+  color: var(--color-primary-text);
+}
+
+body {
+  font-family: "JetBrains Mono";
+  background-color: #f7f7f7;
+}
+
+.body {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 2rem;
+  width: 95%;
+  font-size: 0.75rem;
+}
+
+@media screen and (min-width: 480px) {
+  .body {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .body {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .body {
+    width: 40%;
+  }
+}
+
+nav {
   text-align: center;
-  padding: 12px;
-  margin-bottom: 6px;
-  height: 20px;
-  width: 200px;
 }
-#chevron:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 51%;
-  background: red;
-  transform: skew(0deg, 15deg);
+
+.home__direction {
+  font-size: 1.5rem;
 }
-#chevron:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100%;
-  width: 50%;
-  background: red;
-  transform: skew(0deg, -15deg);
+
+.page__title {
+  margin-top: 1.5rem;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.tracker__container {
+  background-color: white;
+  margin-top: 1.25rem;
+  border-radius: 5% 20%;
+  box-shadow: 0.5rem 0.5rem 0.5rem #bebebe;
+  padding: 2rem 2rem 4rem 2rem;
+}
+
+.tracker__title {
+  font-size: 1rem;
+}
+
+#balance {
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  overflow-wrap: break-word;
+}
+
+.cash__flow__containers {
+  display: flex;
+  margin-top: 1.5rem;
+  justify-content: center;
+  width: 100%;
+}
+
+.cash__flow__container {
+  text-align: center;
+  font-size: 1rem;
+  margin: 0 1rem;
+  max-width: 50%;
+}
+
+div#income {
+  font-size: 1.5rem;
+  color: #2fcb71;
+  overflow-wrap: break-word;
+}
+
+#expense {
+  font-size: 1.5rem;
+  color: #bf3a2b;
+  overflow-wrap: break-word;
+}
+
+.vl {
+  border-right: 1px solid #000;
+}
+
+.history__header {
+  margin-top: 2rem;
+  font-weight: 700;
+  text-align: left;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #000;
+}
+
+#transaction__histories {
+  padding-bottom: 2rem;
+  color: #514f56;
+}
+
+div.transaction__history__amount {
+  text-align: right;
+  overflow-wrap: break-word;
+}
+.row {
+  margin-top: 1rem;
+  font-size: 1rem;
+  width: 100%;
+  align-items: center;
+}
+
+.income__flag {
+  border-right: 0.25rem solid green;
+}
+
+.expense__flag {
+  border-right: 0.25rem solid red;
+}
+
+.row:hover .delete__img {
+  display: block;
+  margin: 0;
+}
+
+.delete__img {
+  display: none;
+  margin: 0;
+}
+
+.new__transaction__title {
+  font-weight: 700;
+  text-align: left;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #000;
+}
+
+form {
+  margin-top: 0.75rem;
+}
+
+label {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+button#submit {
+  border: 1px solid #ccc;
+  background-color: #2d3146;
+  color: white;
+  border-radius: 0;
+  font-size: 0.875rem;
+  padding: 0.5rem 1rem;
+  margin-top: 0.75rem;
+  width: 100%;
 }
