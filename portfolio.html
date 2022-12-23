@@ -89,11 +89,98 @@
           onclick="showMobileApp()"
         >
           Mobile App</button
-        ><button type="button" class="filter__button" id="ui__filter__button">
+        ><button
+          type="button"
+          class="filter__button"
+          id="ui__filter__button"
+          onclick="showUiDesign()"
+        >
           UI Design
         </button>
       </div>
     </section>
+
+    <!-- Modal and carousel -->
+    <div
+      class="modal fade"
+      id="imageModal"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button
+              type="button"
+              class="close__button"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              X
+            </button>
+
+            <!-- Carousel -->
+            <div
+              id="image__carousel"
+              class="carousel slide"
+              data-bs-ride="false"
+            >
+              <div class="carousel-inner active">
+                <div class="carousel-item">
+                  <img src="assets/img/works/1.jpg" class="d-block" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/img/works/2.jpg" class="d-block" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/img/works/3.jpg" class="d-block" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/img/works/4.jpg" class="d-block" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/img/works/5.jpg" class="d-block" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/img/works/6.jpg" class="d-block" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/img/works/7.jpg" class="d-block" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/img/works/8.jpg" class="d-block" alt="..." />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#image__carousel"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#image__carousel"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Portfolio -->
     <section class="container">
@@ -102,32 +189,81 @@
           class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3"
         >
           <div class="col web__design port__img">
-            <img src="assets/img/works/1.jpg" alt="" />
+            <img
+              src="assets/img/works/1.jpg"
+              alt=""
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              onclick="displayModal(this)"
+            />
           </div>
           <div class="col web__design port__img">
-            <img src="assets/img/works/2.jpg" alt="" />
+            <img
+              src="assets/img/works/2.jpg"
+              alt=""
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              onclick="displayModal(this)"
+            />
           </div>
           <div class="col web__design port__img">
-            <img src="assets/img/works/3.jpg" alt="" />
+            <img
+              src="assets/img/works/3.jpg"
+              alt=""
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              onclick="displayModal(this)"
+            />
           </div>
           <div class="col mobile__app port__img">
-            <img src="assets/img/works/4.jpg" class="" alt="" />
+            <img
+              src="assets/img/works/4.jpg"
+              class=""
+              alt=""
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              onclick="displayModal(this)"
+            />
           </div>
           <div class="col mobile__app port__img">
-            <img src="assets/img/works/5.jpg" class="" alt="" />
+            <img
+              src="assets/img/works/5.jpg"
+              class=""
+              alt=""
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              onclick="displayModal(this)"
+            />
           </div>
           <div class="col">
             <img
               src="assets/img/works/6.jpg"
               class="ui__design port__img"
               alt=""
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              onclick="displayModal(this)"
             />
           </div>
           <div class="col ui__design port__img">
-            <img src="assets/img/works/7.jpg" class="" alt="" />
+            <img
+              src="assets/img/works/7.jpg"
+              class=""
+              alt=""
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              onclick="displayModal(this)"
+            />
           </div>
           <div class="col ui__design port__img">
-            <img src="assets/img/works/8.jpg" class="" alt="" />
+            <img
+              src="assets/img/works/8.jpg"
+              class=""
+              alt=""
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              onclick="displayModal(this)"
+            />
           </div>
         </div>
       </div>
@@ -239,6 +375,7 @@
     </footer>
     <script src="assets/js/scrollTop.js"></script>
     <script src="assets/js/filterPortfolio.js"></script>
+    <script src="assets/js/portfolioModal.js"></script>
 
     <!-- JavaScript Bundle with Popper -->
     <script

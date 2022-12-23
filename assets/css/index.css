@@ -168,6 +168,7 @@ section {
   justify-content: center;
   flex-wrap: wrap;
   position: relative;
+  gap: 2rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -266,13 +267,17 @@ section {
 section.quote {
   background-color: #efefef;
 }
-
-.carousel-inner {
-  padding-bottom: 5rem;
-}
 .quote__container {
   text-align: center;
   margin: 0 1rem;
+}
+
+.quote .carousel-indicators {
+  margin-bottom: 0;
+}
+
+.quote .carousel-inner {
+  padding: 1.25rem 0;
 }
 
 .quote__container p {

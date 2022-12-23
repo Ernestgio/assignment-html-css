@@ -74,3 +74,15 @@ function showMobileApp() {
     images[i].style.display = "block";
   }
 }
+
+function showUiDesign() {
+  inactiveAllButton();
+
+  document.getElementById(uiDesignButtonId).classList.add(activeButtonClass);
+
+  hideAll();
+  let images = document.getElementsByClassName(uiDesignClassname);
+  for (let i = 0; i < images.length; i++) {
+    images[i].style.display = "block";
+  }
+}
